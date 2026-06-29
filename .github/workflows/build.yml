@@ -13,7 +13,7 @@ jobs:
       - name: Build with Gradle
         run: chmod +x gradlew && ./gradlew build
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4  # Burayı v4 yaptık
         with:
           name: ThunderHack-Build
           path: build/libs/*.jar
